@@ -1,0 +1,67 @@
+<!-- design an html table thatdisplays branch, student name, roll no,the should use rule='group',
+ include atleast two diffrent branches, third each branch should have multiple student and branch name should have 
+ multiple span rows. diffrentbgcolor for each branch-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2_lec5</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 140px;
+            font-size: large;
+            font-weight: 400;
+            
+        }
+    </style>
+ </head>
+ <body>
+    <table align="justify" rules="groups" width="500px" height="300px" bgcolor="#f9f9f9" border="2px solid 2px">
+        <caption>Lj University - Student List</caption>
+        <thead bgcolor="yellow">
+            <tr align="center">
+                <td>Branch</td>
+                <td>Student_Name</td>
+                <td>Rollnumber</td>
+            </tr>
+        </thead>
+        <tbody bgcolor="orange">
+            <tr align="center">
+                <td rowspan="3">Computer</td>
+                <td>Rahul sharma</td>
+                <td>CE101</td>
+            </tr>
+            <tr align="center">
+                <td>Priya patel</td>
+                <td>CE102</td>
+            </tr>
+            <tr align="center">
+                <td>Amit verma</td>
+                <td>CE103</td>
+            </tr>
+        </tbody>
+        <tbody bgcolor="red">    
+            <tr align="center">
+                <td rowspan="3">It</td>
+                <td>Rohan mehta</td>
+                <td>IT101</td>
+            </tr>
+            <tr align="center">
+                <td>Sneha iyer</td>
+                <td>IT102</td>
+            </tr>
+            <tr align="center">
+                <td>Vikas patel</td>
+                <td>IT103</td>
+            </tr>    
+        </tbody>
+        <tfoot align="center" bgcolor="pink">
+            <td colspan="3">LJ university by @2025</td>
+        </tfoot>
+    </table>
+ </body>
+ </html>

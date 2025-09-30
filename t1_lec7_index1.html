@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            background-color: #ffebcd;
+        }
+        form{
+            background-color: #85bcec;
+            color: #ffebcd;
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            width:540px;
+            height:690px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+        }
+        hr{
+            color: #ffebcd;
+        }
+        .in{
+            background-color: #ffebcd;
+        }
+    </style>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>My form</legend>
+            <label for="uname">Username : </label>
+            <input class="in" type="text" name="username" id="uname" autofocus autocomplete="on" placeholder="Enter Username" required maxlength="20"/>
+            <hr>
+            Password : <input class="in" type="password" name="pwd" placeholder="Enter Password" required minlength="10"/>
+            <hr>
+            Email : <input class="in" type="email" name="email" placeholder="name@gmail.com" required/>
+            <hr>
+            Phone : <input class="in" type="tel" name="phone" placeholder="1234567890"/>
+            <hr>
+            DOB : <input class="in" type="date" nmae="dob" min="2025-09-30" max="2025-12-31"/>
+            <hr>
+            Age : <input class="in" type="number" name="age" min="1" max="100" step="1" value="18"/>
+            <hr>
+            Gender :<input class="in" type="radio" name="gender" value="male" checked/>Male
+                    <input class="in" type="radio" name="gender" value="female"/>Female
+            <hr>       
+            Hobby : <input class="in" type="checkbox" name="c1" value="music" checked/>Music 
+                    <input class="in" type="checkbox" name="c2" value="sports" checked/>Sports
+                    <input class="in" type="checkbox" name="c3" value="reading"/>Readings
+            <hr>
+            Favorite color : <input class="in" type="color" name="favcolor" value="#85bcec"/>
+            <hr>   
+            Preferred browser : <input class="in" list="browsers" name="s1">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Safari">
+                <option value="Edge">        
+            </datalist> 
+            <hr>
+            Level : <input class="in" type="range" name="r1" min="0" max="50" step="5" value="25">
+            <hr>
+            Address : <textarea class="in" name="addr" rows="6" cols="20">Enter your address...</textarea>
+            <hr>
+            Select branch : <select class="in" name="b1">
+                <option selected hidden disabled>Select</option>
+                <optgroup label="computer">
+                    <option>CE</option>
+                    <option>IT</option>
+                    <option>AIDS</option>
+                </optgroup>
+            </select>
+            <hr>
+            <input class="in" type="submit">
+            <input type="hidden" name="userid" value="12345">
+        </fieldset>
+    </form>
+</body>
+</html>
