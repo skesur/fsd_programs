@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            background-color: #ffebcd;
+        }
+        form{
+            background-color: #85bcec;
+            color: #ffebcd;
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            width:540px;
+            height:690px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+        }
+        hr{
+            color: #ffebcd;
+        }
+        .in{
+            background-color: #ffebcd;
+        }
+    </style>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>Bank Login Form</legend>
+            <label for="anum">Account Number : </label>
+            <input class="in" type="number" name="number" id="anum" autofocus autocomplete="on" placeholder="Enter account number" required/>
+            <br>
+            <br>
+            IFSC Code : <input class="in" type="text" name="ifsc" placeholder="Enter IFSC Code" required/>
+            <br>
+            <br>
+            Pin : <input class="in" type="pin" name="pin" placeholder="Enter Pin" required/>
+            <br>
+            <br>
+            Confirm Pin : <input class="in" type="pin" name="pin" placeholder="Re-Enter Pin"/>
+            <br>
+            <br>
+            Email : <input class="in" type="email" name="email" placeholder="Enter your email" required/>
+            <br>
+            <br>
+            Phone : <input class="in" type="tel" name="phone" placeholder="Enter your phone number"/>
+            <br>
+            <br>
+            Select Branch ocation : <select class="in" name="b1">
+                <option selected hidden disabled>Choose a branch</option>
+                <optgroup label="location">
+                    <option>Ahmedabad</option>
+                    <option>Surat</option>
+                    <option>Rajkot</option>
+                </optgroup>
+            </select>
+            <br>  
+            <br>     
+            Date Of Birth : <input class="in" type="date" name="dob"/>
+            <br>
+            <br>
+            Account Type : 
+                <input class="in" type="radio" name="saving" value="saving" checked/>Saving
+                <input class="in" type="radio" name="checking" value="checking"/>Checking
+                <input class="in" type="radio" name="business" value="business"/>Business
+            <br>
+            <br>   
+            <input class="in" type="checkbox" name="c1" value="music"/>I agree to the terms and conditions
+            <br>
+            <br>
+            Additional Information : <textarea class="in" name="addr" rows="6" cols="20">Enter any additional information</textarea>
+            <br>
+            <br>
+            Upload proof of ID : <input class="in" type="file" name="f1" accept=".pdf,.doc"/>No file chosen
+            <br>
+            <br>
+            <input class="in" type="submit">
+            <input class="in" type="reset">
+            <br>
+            <br>
+            <input class="in" type="checkbox" name="c1" value="music"/>Subscribe to our newsletter
+            <input type="hidden" name="userid" value="12345">
+        </fieldset>
+    </form>
+</body>
+</html>

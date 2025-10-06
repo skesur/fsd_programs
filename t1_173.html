@@ -1,0 +1,79 @@
+<html>
+    <body>
+        <form method="post" width="600px">
+            <fieldset>
+                <legend>Customer Detail</legend>
+                <label for="uname">Name : </label>
+                <input class="in" type="text" name="username" id="uname" autofocus autocomplete="on" placeholder="Enter your name" required maxlength="20"/>
+                <br>
+                <br>
+                Number : <input class="in" type="number" name="num" placeholder="Enter your number" required minlength="10"/>
+                <br>
+                <br>
+                Email : <input class="in" type="email" name="email" placeholder="Enter your email" required/>
+                <br>
+                <br>
+                Pizza Name : <input class="in" type="checkbox" name="p1" value="Simple vwg"/>Simple Veg
+                             <input class="in" type="checkbox" name="p1" value="7 cheese"/>7 Cheese
+                <br>
+                <br>
+                Outlet City : <select class="in" name="b1">
+                <option selected hidden disabled>--List of area--</option>
+                <optgroup label="area">
+                    <option>Ahmedabad</option>
+                    <option>Surat</option>
+                    <option>Rajkot</option>
+                </optgroup>
+                </select>      
+                <br>
+                <br>
+                Orderdate : <input class="in" type="date" name="orderdate" max="2025-11-01"/>       
+                <br>
+                <br>
+                Comment : <textarea class="in" name="comment" rows="6" cols="20"></textarea>
+            </fieldset>
+        </form>
+        <form width="600px">
+            <fieldset>
+                <legend>Scale Ordered Pizza</legend>
+                <table width="500px" rules="all">
+                    <thead>
+                        <tr align="center">
+                            <td>Scale</td>
+                            <td>Good</td>
+                            <td>Avg</td>
+                            <td>Bad</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="center">
+                            <td>Quality</td>
+                            <td><input class="in" type="radio" name="quality" value="good" checked/></td>
+                            <td><input class="in" type="radio" name="quality" value="avg"/></td>
+                            <td><input class="in" type="radio" name="quality" value="bad"/></td>
+                        </tr>
+                        <tr align="center">
+                            <td>Quantity</td>
+                            <td><input class="in" type="radio" name="quantity" value="good" checked/></td>
+                            <td><input class="in" type="radio" name="quantity" value="avg"/></td>
+                            <td><input class="in" type="radio" name="quantity" value="bad"/></td>
+                        </tr>
+                        <tr align="center">
+                            <td>Freshness</td>
+                            <td><input class="in" type="radio" name="freshness" value="good"/></td>
+                            <td><input class="in" type="radio" name="freshness" value="avg" checked/></td>
+                            <td><input class="in" type="radio" name="freshness" value="bad"/></td>
+                        </tr>
+                        <tr align="center">
+                            <td>Overall Rating</td>
+                            <td colspan="3">0<input class="in" type="range" name="r1" min="0" max="50" step="5" value="25">10</td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="4"><input type="submit"/></td>
+                        </tr>    
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
