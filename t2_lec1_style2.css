@@ -1,0 +1,57 @@
+/* id selector */
+#id1{
+    font-style: italic;
+    text-align: center;
+}
+#id2{
+    color:cadetblue;
+}
+#id3{
+    width: 50%;
+    color: skyblue;
+    text-align: left;
+}
+/* class selector */
+.class1{
+    border: 2px solid navy;
+}
+.class2{
+    border: 3px solid darkcyan;
+    text-align: center;
+}
+/* universal selector */
+*{
+    background-color: bisque;
+    text-align: center;
+}
+/* child selector */
+.pdiv{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pdiv > .cdiv{
+    background-color: rgb(192,76,76);
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* descendant selector */
+.div1 p{
+    text-align: center;
+    color: rgb(93, 165, 165);
+    border: 2px solid snow;
+}
+input[type='text']{
+    background-color: cadetblue;
+    border: none;
+}
+/* grouping selector */
+h1,h2,h3,h4,h5,h6{
+    color:steelblue;
+}
