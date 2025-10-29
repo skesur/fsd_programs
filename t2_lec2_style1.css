@@ -1,0 +1,24 @@
+.div1{
+    height: 300px;
+    width: 500px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("image1.png");
+    background-attachment:scroll;
+    color:blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div2{
+    width:700px;
+    height: 500px;
+    background-color: black;
+    color:bisque;
+    text-align: center;
+    text-decoration:underline;
+    text-transform: capitalize;
+    text-indent: 70px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-shadow: 2px 2px 3px beige;
+}
