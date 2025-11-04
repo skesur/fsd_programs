@@ -1,0 +1,20 @@
+p::first-line{
+    color:red;font-style:italic;
+}
+p::first-letter{
+    color:blue;font-style: oblique;
+}
+h1::before{
+    content:'😀'
+}
+h3::after{
+    content: 'Note : ';color:aqua;
+}
+ul li::marker{
+    color:palegoldenrod;
+    font-size:30px;
+}
+::selection{
+    background-color: yellow;
+    color: cyan;
+}
