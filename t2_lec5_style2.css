@@ -1,0 +1,39 @@
+
+.box{
+    position: relative;
+    height: 400px;
+    width: 330px;
+    background-color: black;
+    border: 10px solid brown;
+    color: azure;
+    padding: 0%;
+}
+.batman{
+    margin: 0%;
+    height: 400px;
+    position:relative;
+    opacity: 0.5;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    z-index: 0;
+}
+.h11{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top:15px;
+    right: 0px;
+    z-index: 1;
+    opacity: 1;
+    margin: 0%;
+    padding: 0%;
+}
+.h12{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 15px;
+    left:22px;
+    z-index: 1;
+    opacity: 1;
+}
