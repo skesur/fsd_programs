@@ -1,0 +1,44 @@
+:root{
+    --c:center;
+    --b:#123456;
+    --all: solid dashed double dotted
+    --p20:20px;
+}
+p{
+    --b:brown;
+    border-style:var(--all);
+    border-color:var(--b);
+    padding:var(--p20);
+    text-align: var(--c);
+}
+.parent{
+    height: 900px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+}
+.table1{
+    height: 300px;
+    width:300px;
+    background-color: green;
+    margin:10px;
+    color:white;
+    padding: 10px;
+}
+.table2{
+    height: 300px;
+    width:300px;
+    background-color: blue;
+    margin:10px;
+    color:white;
+    padding: 10px;
+}
+@media (orientation: portrait){
+    .parent{
+        flex-direction: column;
+    }.table1{
+        background-color: blue;
+    }.table2{
+        background-color: green;
+    }
+}
