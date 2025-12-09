@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap lec7 t3 index2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><i class="bi bi-star-fill text-warning" style="font-size: 24px;"></i> Star-Website</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto d-flex flex-row">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link mx-2">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#product" class="nav-link mx-2">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#id1">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="id1" class="modal fade">
+        <div class="modal-dialog modal-lg modal-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h1 class="modal-title bg-dark text-light">Login</h1>
+                </div>
+                <div class="modal-body bg-dark">
+                    Username : <input type="text" id="username" placeholder="Enter Username...">
+                    <br><br>
+                    Password : <input type="password" id="password" placeholder="Enter Password...">
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#id2">Login</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id2" class="modal fade">
+        <div class="modal-dialog modal-fullscreen modal-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h1 class="modal-title bg-dark text-light">Login Result</h1>
+                </div>
+                <div class="modal-body bg-dark">
+                    <h3>Login Successfully</h3>
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
