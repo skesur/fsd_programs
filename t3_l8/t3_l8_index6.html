@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap lec8 t3 index2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><i class="bi bi-star-fill text-warning" style="font-size: 24px;"></i> Star-Website</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto d-flex flex-row">
+                    <li class="nav-item m-2">
+                        <a href="#example" class="nav-link mx-2">Notes</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signup">Signup</button>
+                    </li>
+                    <li class="nav-item m-2">
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#id1">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="id1" class="modal fade">
+        <div class="modal-dialog modal-lg modal-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h1 class="modal-title bg-dark text-light">Login</h1>
+                </div>
+                <div class="modal-body bg-dark text-light">
+                    Username : <input type="text" id="username" placeholder="Enter Username...">
+                    <br><br>
+                    Password : <input type="password" id="password" placeholder="Enter Password...">
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#id2">Login</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signup" class="modal fade">
+        <div class="modal-dialog modal-lg modal-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h1 class="modal-title bg-dark text-light">Signup</h1>
+                </div>
+                <div class="modal-body bg-dark text-light">
+                    Username : <input type="text" id="username" placeholder="Enter Username...">
+                    <br><br>
+                    Email : <input type="email" id="email" placeholder="Enter Email...">
+                    <br><br>
+                    Password : <input type="password" id="password" placeholder="Enter Password...">
+                    <br><br>
+                    City : <input type="text" id="city" placeholder="Enter City...">
+                    <br><br>
+                    Address : <input type="text" id="address" placeholder="Enter Address...">
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#id2">Signup</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="bg-dark d-flex justify-content-center align-items-center m-3" style="height:520px">
+        <div class="carousel slide w-25" id="id1" data-bs-ride="carousel" data-bs-pause="hover">
+            <div class="carousel-indicators">
+                <button data-bs-target="#id1" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#id1" data-bs-slide-to="1"></button>
+                <button data-bs-target="#id1" data-bs-slide-to="2"></button>
+                <button data-bs-target="#id1" data-bs-slide-to="3"></button>
+                <button data-bs-target="#id1" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="i1.jpg" alt="" class="d-block w-100" style="height:510px">
+                    <div class="carousel-caption"><h1>1</h1></div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="i2.jpg" alt="" class="d-block w-100" style="height:510px">
+                    <div class="carousel-caption"><h1>2</h1></div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="i3.jpg" alt="" class="d-block w-100" style="height:510px">
+                    <div class="carousel-caption"><h1>3</h1></div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="i4.jpg" alt="" class="d-block w-100" style="height:510px">
+                    <div class="carousel-caption"><h1>4</h1></div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="i5.jpg" alt="" class="d-block w-100" style="height:510px">
+                    <div class="carousel-caption"><h1>5</h1></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#id1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#id1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <br><br>
+    <div class="accordion" id="example">
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header bg-dark text-light">
+                <button class="accordion-button bg-dark text-light" data-bs-toggle="collapse"
+                    data-bs-target="#id1">FSD-1</button>
+            </h2>
+            <div id="id1" class="collapse" data-bs-parent="#example">
+                <div class="accordion-body text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odio minima tenetur error
+                    laudantium porro aspernatur beatae sit officiis aut ex a adipisci ducimus ullam pariatur quos sunt
+                    eaque culpa, esse, odit optio quibusdam nisi. Enim nobis minus nam quisquam nisi eos eum, voluptas
+                    repellat pariatur veniam cum non repellendus saepe molestias consequatur optio voluptates aliquam
+                    iure, itaque aliquid. Pariatur, quam? Labore, molestiae aspernatur earum autem sapiente eligendi
+                    sunt quaerat nostrum quidem dolore doloribus consectetur quia repellat reprehenderit! Impedit odio
+                    culpa error atque magni adipisci eaque labore tenetur sapiente perspiciatis natus sed incidunt,
+                    illo, praesentium optio possimus repellat accusantium est.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header bg-dark text-white">
+                <button class="accordion-button bg-dark text-white" data-bs-toggle="collapse"
+                    data-bs-target="#id2">PS</button>
+            </h2>
+            <div id="id2" class="collapse" data-bs-parent="#example">
+                <div class="accordion-body text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odio minima tenetur error
+                    laudantium porro aspernatur beatae sit officiis aut ex a adipisci ducimus ullam pariatur quos sunt
+                    eaque culpa, esse, odit optio quibusdam nisi. Enim nobis minus nam quisquam nisi eos eum, voluptas
+                    repellat pariatur veniam cum non repellendus saepe molestias consequatur optio voluptates aliquam
+                    iure, itaque aliquid. Pariatur, quam? Labore, molestiae aspernatur earum autem sapiente eligendi
+                    sunt quaerat nostrum quidem dolore doloribus consectetur quia repellat reprehenderit! Impedit odio
+                    culpa error atque magni adipisci eaque labore tenetur sapiente perspiciatis natus sed incidunt,
+                    illo, praesentium optio possimus repellat accusantium est.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header bg-dark text-white">
+                <button class="accordion-button bg-dark text-white" data-bs-toggle="collapse"
+                    data-bs-target="#id3">DE</button>
+            </h2>
+            <div id="id3" class="collapse" data-bs-parent="#example">
+                <div class="accordion-body text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odio minima tenetur error
+                    laudantium porro aspernatur beatae sit officiis aut ex a adipisci ducimus ullam pariatur quos sunt
+                    eaque culpa, esse, odit optio quibusdam nisi. Enim nobis minus nam quisquam nisi eos eum, voluptas
+                    repellat pariatur veniam cum non repellendus saepe molestias consequatur optio voluptates aliquam
+                    iure, itaque aliquid. Pariatur, quam? Labore, molestiae aspernatur earum autem sapiente eligendi
+                    sunt quaerat nostrum quidem dolore doloribus consectetur quia repellat reprehenderit! Impedit odio
+                    culpa error atque magni adipisci eaque labore tenetur sapiente perspiciatis natus sed incidunt,
+                    illo, praesentium optio possimus repellat accusantium est.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header bg-dark text-white">
+                <button class="accordion-button bg-dark text-white" data-bs-toggle="collapse"
+                    data-bs-target="#id3">Python-1</button>
+            </h2>
+            <div id="id3" class="collapse" data-bs-parent="#example">
+                <div class="accordion-body text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odio minima tenetur error
+                    laudantium porro aspernatur beatae sit officiis aut ex a adipisci ducimus ullam pariatur quos sunt
+                    eaque culpa, esse, odit optio quibusdam nisi. Enim nobis minus nam quisquam nisi eos eum, voluptas
+                    repellat pariatur veniam cum non repellendus saepe molestias consequatur optio voluptates aliquam
+                    iure, itaque aliquid. Pariatur, quam? Labore, molestiae aspernatur earum autem sapiente eligendi
+                    sunt quaerat nostrum quidem dolore doloribus consectetur quia repellat reprehenderit! Impedit odio
+                    culpa error atque magni adipisci eaque labore tenetur sapiente perspiciatis natus sed incidunt,
+                    illo, praesentium optio possimus repellat accusantium est.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
