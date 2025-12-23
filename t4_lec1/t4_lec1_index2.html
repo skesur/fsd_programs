@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>t4-lec1-index2</title>
+    <script>
+        function moveBall(e) {
+            let ball = document.querySelector(".ball");
+            ball.style.left = e.clientX + "px";
+            ball.style.top = e.clientY + "px";
+        }
+    </script>
+</head>
+<body onmousemove="moveBall(event)" style="height: 100vh; margin: 0; background-color: black;">
+
+    <div class="ball" style="
+        width: 30px; 
+        height: 30px; 
+        background: rgb(255, 153, 0); 
+        border-radius: 50%; 
+        position: fixed; 
+        pointer-events: none; 
+        transform: translate(-50%, -50%);
+        transition: left 0.1s ease-out, top 0.1s ease-out;">
+    </div>
+
+</body>
+</html>

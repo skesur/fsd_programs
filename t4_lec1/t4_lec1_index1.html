@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t4-lec1-index1</title>
+    <script>
+        document.write("hello world")
+        document.writeln("First line")
+        document.writeln("First line <br>")
+        document.writeln("Second line")
+        console.log("console")
+        function change(){
+            let bcolor = document.querySelector(".color")
+            let color = document.querySelector(".p1")
+            if (bcolor.style.backgroundColor == "blue" && color.textContent == "Blue"){
+                bcolor.style.backgroundColor = "red";
+                color.textContent = "Red";
+                console.log("red")
+            }else{
+                bcolor.style.backgroundColor = "blue";
+                color.textContent = "Blue";
+                console.log("blue")
+            }
+        }
+    </script>
+</head>
+<body><br><br>
+    <button class="color" style="background-color: red;" onclick="change()"><p class="p1" style="color:white; width:50px; height:20px; border:0px solid transparent; font-size:20px; font-weight:bold">Red</p></button>
+    <h1>Example of JS</h1>
+    <script src="t4_lec1_script1.js"></script>
+</body>
+</html>
