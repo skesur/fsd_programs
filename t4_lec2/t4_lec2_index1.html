@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t4 lec2 index1</title>
+    <script>
+        function start123() {
+            let col = document.querySelector(".start1")
+            let colors = ["red", "orange", "yellow", "green", "blue", "indigo", "purple", "brown", "black"]
+            colors.forEach((color, index) => {
+                setTimeout(() => {
+                    col.style.backgroundColor = color
+                    col.textContent = color
+                    console.log(color)
+                }, 250 * index)
+            })
+        }
+
+
+        let intervalId = null;
+        let index = 0;
+        function start321() {
+            const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "purple", "brown", "black"];
+            const el = document.querySelector(".start2");
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+            } else {
+                intervalId = setInterval(() => {
+                    const color = colors[index];
+                    el.style.backgroundColor = color;
+                    el.textContent = color;
+                    console.log(color)
+                    index = (index + 1) % colors.length;
+                }, 250);
+            }
+        }
+
+
+        let fruits = ["apple", "banana", "mango", "grapes"]
+        fruits.push("orange")
+        console.log(fruits)
+        let removed = fruits.pop()
+        console.log(fruits)
+        console.log(removed)
+        let num = [1, 2, 3, 4]
+        let squares = num.map(num => num * num)
+        console.log(squares)
+
+
+        let users = [
+            { id: 1, name: "a" },
+            { id: 2, name: "b" },
+            { id: 3, name: "c" }
+        ]
+        let user = users.find(u => u.id == 2)
+        console.log(user.name, user)
+
+
+        let fruit1 = ["apple", "banana", "mango", "grapes"]
+        for (let a of fruit1) {
+            console.log(a)
+        }
+
+
+        let fruit2 = ["apple", "banana", "mango", "grapes"]
+        for (let a in fruit2) {
+            console.log(a)
+        }
+
+
+        let name = prompt("Enter your name : ")
+        alert(`Hello ${name}`)
+
+
+        function show() {
+            alert("Button is clicked!!!")
+        }
+
+
+        function fun(e) {
+            e.preventDefault()
+            let t = document.querySelector(".text").value
+            alert(`Welcome ${t}`)
+        }
+    </script>
+</head>
+
+<body>
+    <button class="start1"
+        style="background-color: bisque; color: rgb(131, 124, 124); width: 80px; height: 30px; font-size: 20px; transition: background-color 0.5 ease"
+        onclick="start123()">bisque</button>
+    <br>
+    <br>
+    <button class="start2"
+        style="background-color: bisque; color: rgb(131, 124, 124); width: 80px; height: 30px; font-size: 20px; transition: background-color 0.5 ease"
+        onclick="start321()">bisque</button>
+    <br>
+    <br>
+    <button class="start3" onclick="show()">Click</button>
+    <br>
+    <br>
+    <form onsubmit="fun(event)">
+        <input type="text" value="username" class="text">
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
