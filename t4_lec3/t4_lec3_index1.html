@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        const square = n => n * n;
+        console.log(square(5))
+        const sayHello = () => "hello"
+        console.log(sayHello())
+        const multiply = (x, y) => {
+            return x * y
+        }
+        console.log(multiply(5, 6))
+        a=5
+        b=5
+        c=a+b
+        document.writeln("addiiton of "+a+" and "+b+" is "+c+"<br>")
+        document.writeln(`addiiton of ${a} and ${b} is ${c}`)
+        const add = (j,k) => ans = `${j+k}`
+        console.log(add(7,8))
+        const students = [
+            {name:"Alice",scores:{maths:85,science:90,history:78}},
+            {name:"Bob",scores:{maths:92,science:88,history:95}},
+            {name:"Charlie",scores:{maths:70,science:75,history:80}},
+            {name:"Diana",scores:{maths:95,science:98,history:93}}
+        ]
+        let arr = []
+        let avg = 0.0
+        students.forEach((st,i)=>{
+            avg = (st.scores.maths+st.scores.science+st.scores.history)/3
+            arr.push(avg)
+        })
+        let max = arr.sort()[arr.length-1]
+        let i1 = 0
+        for(i=0;i<arr.length;i++){
+            if (arr[i]==max){
+                i1=i
+            }
+        }
+        console.log(students[i1].name,max)
+
+        // write a es-6 function on button p, take one division with some some text and no decoration initially take 
+        // font-size and font-style as default argument and pass bg color and text color while passing argument
+        function change(a="red",b="aqua",c="40px"){
+            let d = document.querySelector(".get")
+            d.style.backgroundColor = a;
+            d.style.color=b;
+            d.style.fontSize=c;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="get" style="background-color: aqua;color:black;font-size: 20px;">Write</div>
+    <button onclick="change('plum')">change</button>
+</body>
+
+</html>
