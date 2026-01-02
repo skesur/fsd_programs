@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <span>oninput</span>
+    <input type="text" oninput="this.value = this.value.toUpperCase()"/>
+    <span>onchange</span>
+    <input type="text" onchange="this.value = this.value.toUpperCase()"/>
+    <span>onfocus</span>
+    <input type="text" onfocus="this.style.backgroundColor='pink'"/>
+    <span>onblur</span>
+    <input type="text" onblur="this.style.fontStyle='italic'"/>
+
+    <br><br>
+    <form action="#"  onsubmit="myfunction()">
+        Enter Name: <input type="text" name="fname" id="fname"/>
+        <input type="submit" value="submit"/>
+    </form>
+    <script>
+        function myfunction(){
+            a = document.getElementById("fname").value;
+            alert(`The form was submitted!
+            welcome: ${a}`)
+        }
+    </script>
+</body>
+</html>

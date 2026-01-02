@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            c1 = document.getElementsByClassName("same");
+
+            for(i=0;i<c1.length;i++){
+                c1[i].innerHTML = "Changed text"
+                c1[i].style.color = "red"
+                c1[i].style.backgroundColor = "cyan"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 class="same">H1 tag</h1>
+    <p class="same">P tag</p>
+    <input type="button" onclick="fun()" value="click me"/>
+</body>
+</html>

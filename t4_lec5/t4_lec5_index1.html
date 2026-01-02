@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1" title="Demo text">Hello</p>
+    <input type="text" id="txt1" value="xyz" />
+    <script>
+        var x = document.getElementById("p1");
+        var y = document.getElementById("txt1");
+
+        document.getElementById("p1").removeAttribute("title");
+
+        alert(`title of p=${x.getAttribute("title")}  \ntextvalue=${y.getAttribute("value")}`)
+    </script>
+</body>
+
+</html>

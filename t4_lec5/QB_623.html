@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(e){
+            val = e.button;
+            switch(val){
+                case 0:
+                    document.write("Left button clicked");
+                    break;
+                case 1:
+                    document.write("Middle button clicked");
+                    break;
+                case 2:
+                    document.write("Right button clicked");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="height:300px;width:400px;background-color:yellow" onmousedown="fun(event)"></div>
+</body>
+</html>
