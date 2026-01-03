@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="btn"
+        style="width:20px;height: 20px;border-radius: 50%;background-color: black;pointer-events: none;position:absolute;transition: all 0.1s ease-out;z-index: 10;">
+    </div>
+    <form onsubmit="onsub(event)">
+        Usrname: <input type="text" placeholder="Enter username" class="i1" onfocus="focus1(event)" onkeypress="key(event)" oninput="in1(event)">
+        <br><br>
+        email: <input type="email" name="email" id="" placeholder="Enter email" class="i2" onfocus="focus2(event)" oninput="in2(event)">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        let btn = document.querySelector(".btn")
+        document.addEventListener("mousemove", (e) => {
+            console.log(e.clientX, e.clientY)
+            btn.style.left = `${e.clientX - 10}px`
+            btn.style.top = `${e.clientY - 10}px`
+        })
+        // Create a form with two fields: username and email, along with a submit button.
+        // 1.When the form is submitted, prevent the default form submission and display an alert box with
+        // the message "Form submitted".
+        // 2. When the user makes changes to any field and then leaves it (loses focus), the background
+        // color of that field should change to yellow.
+        // 3. While user clicks on inputfield change background color to pink (only for username field).
+        // 4. While the user is typing in a field, the input text should appear in red color.
+        // 5. Implement this using only event attributes (oninput, onchange, onsubmit) in HTML, without
+        // using addEventListener
+        function onsub(e){
+            e.preventDefault()
+            alert("Form Default")
+        }
+        function focus1(e){
+            document.querySelector(".i1").style.backgroundColor="yellow"
+            document.querySelector(".i1").style.color="red"
+        }
+        function focus2(e){
+            document.querySelector(".i2").style.backgroundColor="yellow"
+        }
+        function key(e){
+            document.querySelector(".i1").style.backgroundColor="pink"
+        }
+    </script>
+</body>
+
+</html>
