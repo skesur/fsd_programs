@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t4 lec7 index1</title>
+    <script>
+        function save(){
+            let user = document.getElementById('user').value
+            let pass = document.getElementById('pass').value
+            localStorage.setItem("Username",user)
+            localStorage.setItem("Password",pass)
+        }
+        function show(){
+            let user = localStorage.getItem("Username")
+            let pass = localStorage.getItem("Password")
+            document.getElementById('content').innerHTML=`Username : ${user}, Password : ${pass}`
+        }
+        function remove(){
+            localStorage.removeItem("Username")
+            localStorage.removeItem("Password")
+        }
+
+
+        let order = new Promise((resolve,reject)=>{
+            let success = true
+            setTimeout(()=>{
+                if(success){
+                    resolve("Completed")
+                }else{
+                    reject("Failed")
+                }
+            },2000)
+        });
+        order.then(result=>console.log(result))
+        order.catch(error=>console.log(error))
+        order.finally(()=>console.log("Finally"))
+
+        setInterval(()=>{
+            fetch("https://dog.ceo/api/breeds/image/random")
+            .then(response=>response.json())
+            .then(data=>{
+                document.getElementById('image').innerHTML=`<img src=${data.message} style="width:300px;height:200px"></img>`
+            })
+            .catch(error=>{console.log(error)})
+        },5000)
+            
+            
+    </script>
+</head>
+<body>
+      <form action="">
+        Username: <input type="text" name="" id="user" placeholder="Enter Username...">
+        Password: <input type="password" name="" id="pass" placeholder="Enter Password...">
+        <input type="submit" value="Save" onclick="save()">
+        <input type="button" value="Remove" onclick="remove()">
+        <input type="button" value="Show" onclick="show()">
+        <div id="content"></div>
+      </form>
+      <br><br><br>
+      <div id="image" style="width:300px;height:200px;background-color: aqua;"></div>
+</body>
+</html>
